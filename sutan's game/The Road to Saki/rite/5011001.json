@@ -1,0 +1,67 @@
+ {
+        "id": 5011001,
+        "name": "东方之事",
+        "text": "一名风尘仆仆的信使叩响了你家的大门。",       
+        "tips": "",
+        "mapping_id":8001063,
+        "once_new":0,
+        "round_number": 0,
+        "waiting_round":0, 
+        "waiting_round_end_action":[
+        ],
+        "method_settlement": "",
+        "auto_begin": 0, 
+        "auto_result": 0,                            
+        "location": "自宅:[2,12]", 
+        "icon": "rite_17",  
+        "tag_tips": [
+        ],
+        "tag_tips_up":{
+        },
+        "tips_text":[
+			"你必须给信使一点钱，他才会把信交给你。"
+        ],
+        "open_conditions": [  
+        ],
+        "random_text": { 
+        },
+        "random_text_up":{
+        },
+        "random_effect": {          
+        },
+        "settlement_prior": [
+        ],                
+        "settlement": [
+        ],                
+        "settlement_extre": [
+            {
+                "condition": {
+                },
+                "result_title":"你掏钱打发了信使",
+                "result_text": "你仔细查看信中并不太通顺的文字，大概读懂了这封信来自一位名为丰川定治的东方人，他正在寻找他的孙女。\n 似乎你的权势已经为各国所熟知，但美中不足的是，你难以读懂信中附带的票据。",
+                "result": 
+                { 
+                    "card":[2020016,"已拥有+1"]   
+                },
+                "action": {
+                    "event_on": 5370002
+                }
+            }
+        ],
+        "cards_slot":
+        {
+            "s1":
+            {
+                "condition":
+                {
+                    "type":"item",
+                    "cost.金币=":1      
+                },
+                "open_adsorb":0,
+                "is_key":0,
+                "is_empty":0,
+                "is_enemy":0,
+                "text":"你需要给1金币小费"
+            }
+        }
+    } 

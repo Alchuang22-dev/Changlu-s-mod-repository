@@ -1,0 +1,27 @@
+{
+    "id": 5370003,
+    "text": "三角初华造访",     
+    "is_replay": 1, //是否可以重复触发
+    "auto_start": false,
+    "start_trigger": false, // 是否启动就立即开始校验条件
+    "on":{   //时机
+        "round_begin_ba":3
+    },
+    "condition":{  //条件
+        "!rite":5011003,
+        "table_have.2020017":1 //酒庄主人
+    },
+    "settlement": [    //效果 
+        {
+            "tips_resource":"", 
+            "tips_text":"",
+            "action":{
+                "rite":5011003,
+                "success":{
+                    "event_off":5370003
+                }
+            }
+        }
+
+    ]
+}

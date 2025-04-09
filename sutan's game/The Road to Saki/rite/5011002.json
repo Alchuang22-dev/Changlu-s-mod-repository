@@ -1,0 +1,148 @@
+{
+    "id": 5011002,
+    "name": "接见定治",
+    "text": "伟大而仁慈的苏丹得知了此事：他暗示你，这位异国的来客能让你消耗一张苏丹卡。",       
+    "tips": "",
+    "mapping_id":8001038,
+    "once_new":0,
+    "round_number": 1,
+    "waiting_round":7, 
+    "waiting_round_end_action":[
+        {
+            "condition": {
+            },
+            "result_title":"",
+            "result_text": "",
+            "result": 
+            {
+            },
+            "action": {
+                "over":12
+            }
+        }
+    ],
+    "method_settlement": "",
+    "auto_begin": 0, 
+    "auto_result": 0,                            
+    "location": "宫廷:[2,6]", 
+    "icon": "rite_12",  
+    "tag_tips": [
+    ],
+    "tag_tips_up":{
+    },
+    "tips_text":[
+        "你有7天的时间来决定使用什么样的苏丹卡。"
+    ],
+    "open_conditions": [  
+    ],
+    "random_text": { 
+    },
+    "random_text_up":{
+    },
+    "random_effect": {          
+    },
+    "settlement_prior": [
+    ],                
+    "settlement": [
+    ],                
+    "settlement_extre": [
+        {
+            "condition": {
+                "s3.杀戮":1
+            },
+            "result_title":"你决定使用杀戮卡。",
+            "result_text": "你展示了一张刻画着牺牲的卡片，苏丹饶有兴致着点头，默许你们在他的宫廷进行一次决斗。老人茫然地接过奴仆献上的匕首，还没明白发生了什么事，就被你刺穿了心脏。苏丹哈哈大笑着，揶揄将死之人的年老与脆弱。",
+            "result": 
+            { 
+                "clean.s3":1,
+                "clean.s1":1
+            },
+            "action": {
+            }
+        },
+        {
+            "condition": {
+                "s3.纵欲":1
+            },
+            "result_title":"你决定使用纵欲卡。",
+            "result_text": "你展示了一张刻画着爱侣的卡片，苏丹微笑着点头，默许你们在他的宫廷公开行淫。\n 老人差一点死去，朝堂上的所有人以痛苦的心情面对了这一切。\n 在未来的数周内，他们只是看见你的背影就畏惧得发抖。",
+            "result": 
+            { 
+                "clean.s3":1,
+                "counter+7100003":1
+            },
+            "action": {
+            }
+        },
+        {
+            "condition": {
+                "s3.奢靡":1
+            },
+            "result_title":"你决定使用奢靡卡。",
+            "result_text": "你展示了一张刻画着施舍的卡片，苏丹眯了眯眼睛，“你做了个最无聊的选择。他已经是大富翁了，向他展示你的富足吧。” \n 在你又进献了两三件珠宝之后，苏丹同意你自行处置这位老人。",
+            "result": 
+            { 
+                "clean.s3":1            
+            },
+            "action": {
+                "rite":5011003 
+            }
+        },
+        {
+            "condition": {
+                "s3.征服":1
+            },
+            "result_title":"你决定使用征服卡。",
+            "result_text": "你拿出一张刻画着王权的卡片，苏丹给了你一个心照不宣的眼神，满意地笑了。\n 他命令老人担任向绿洲行军的副总管——在走出华丽的宫门时，你意识到再也见不到这位可怜的副总管了。",
+            "result": 
+            { 
+                "clean.s1":1,  
+                "clean.s3":1           
+            },
+            "action": {
+            }
+        }
+    ],
+    "cards_slot":
+    {
+        "s1":
+        {
+            "condition":
+            {
+                "type":"char",
+                "is":2020015      
+            },
+            "open_adsorb":1,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"老人还不知道会有什么事降临到自己身上"
+        },
+        "s2":
+        {
+            "condition":
+            {
+                "type":"char",
+                "主角":1     
+            },
+            "open_adsorb":0,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"你必须亲自站在苏丹的宫廷"
+        },
+        "s3":
+        {
+            "condition":
+            {
+                "type":"sudan",
+                "f:rare-s1.rare<=":0      
+            },
+            "open_adsorb":0,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"你必须使用一张品级不高于丰川定治的苏丹卡"
+        }
+    }
+} 

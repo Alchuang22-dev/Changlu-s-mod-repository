@@ -1,0 +1,155 @@
+{
+    "id": 5000641,
+    "name": "密会",
+    "text": "你给初华安排的住处远离闹市、远离人群，清净得像是荒废了一般。她坐在屋檐和树荫下安静地看书。",       
+    "tips": "",
+    "mapping_id":8001255,
+    "once_new":0,
+    "round_number": 1,
+    "waiting_round":14, 
+    "waiting_round_end_action":[
+        {
+            "condition": {
+            },
+            "result_title":"",
+            "result_text": "",
+            "result": 
+            {
+            },
+            "action": {
+                "prompt":{
+                    "id":"5000641_prompt_1",
+                    "text":"初华在你这里住了两周，最终失望地回家了。"
+                }
+            }
+        }
+    ],
+    "method_settlement": "",
+    "auto_begin": 0, 
+    "auto_result": 0, 
+    "location": "上城区:[7,12]", 
+    "icon": "rite_16",  
+    "tag_tips": [
+    ],
+    "tag_tips_up":{
+    },
+    "tips_text":[
+        "根据你放置的苏丹卡会导向不同的结果",
+        "你也可以选择不放置任何苏丹卡，平等地和她谈谈"
+    ],
+    "open_conditions": [  
+    ],
+    "random_text": { 
+    },
+    "random_text_up":{
+    },
+    "random_effect": {          
+    },
+    "settlement_prior": [
+    ],                
+    "settlement": [
+    ],                
+    "settlement_extre": [
+        {
+            "condition": {
+                "s4.杀戮":1
+            },
+            "result_title":"天赐良机",
+            "result_text": "见到你来，她似乎并不意外，只是淡淡地朝你点了点头。\n你告诉她，由于苏丹的要求实在太紧，你不得不利用她折断这张该死的杀戮卡。\n她点点头，感谢了你的接待，第二天就从住处消失了。",
+            "result": 
+            { 
+                "clean.s2":1,
+                "clean.s4":1
+            },
+            "action": {
+            }
+        },
+        {
+            "condition": {
+                "s4.纵欲":1
+            },
+            "result_title":"",
+            "result_text": "幽暗的树荫下，你向初华袒露了爱意。\n 你直望见她眼睛里的神采渐渐消失，“……我怜悯你。”他疲惫地阖上双眼，“都是苏丹的错。……我希望你好好对待祥子。",
+            "result": 
+            { 
+                "clean.s2":1,
+                "clean.s4":1
+            },
+            "action": {
+            }
+        },
+        {
+            "condition": {
+                "!s4":1
+            },
+            "result_title":"",
+            "result_text": "见到你来，初华似乎并不意外，只是淡淡地朝你点了点头。\n 你告诉她，一切都暴露了……好在他拿到了可以逃离此地的方法。你希望她能看懂这个……也许你也能找到什么方法逃离残酷的游戏，但不是现在。",
+            "result": 
+            { 
+                "clean.s2":1,
+                "clean.s3":1,
+                "clean.s4":1
+            },
+            "action": {
+            }
+        }
+    ],
+    "cards_slot":
+    {
+        "s1":
+        {
+            "condition":
+            {
+                "主角":1,
+                "type":"char"    
+            },
+            "open_adsorb":0,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"你必须亲自前往"
+        },
+        "s2":
+        {
+            "condition":
+            {
+                "type":"item",
+                "is":2020016
+            },
+            "open_adsorb":0,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"瑞士机票"
+        },            
+        "s3":
+        {
+            "condition":
+            {
+                "is":2000312      
+            },
+            "open_adsorb":1,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"你知道初华的住处"
+        },
+        "s4":
+        {
+            "condition":
+            {
+                "type":"sudan",
+                "f:rare-s3.rare<=":0,
+                "any":{
+                    "杀戮":1,
+                    "纵欲":1
+                } 
+            },
+            "open_adsorb":0,
+            "is_key":0,
+            "is_empty":1,
+            "is_enemy":0,
+            "text":"可选置入不高于初华品级的杀戮卡或纵欲卡"
+        }
+    }
+} 

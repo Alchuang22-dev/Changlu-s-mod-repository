@@ -1,0 +1,48 @@
+{
+    "id": 5300144,
+    "text": "初华的请求",     
+    "is_replay": 0, //是否可以重复触发
+    "auto_start": false,
+    "start_trigger": false, // 是否启动就立即开始校验条件
+    "on":{   //时机
+        "rite_end": 5000610
+    },
+    "condition":{  //条件
+    },
+    "settlement": [    //效果 
+        {
+            "tips_resource":"", 
+            "tips_text":"",
+            "action":{
+                "option": {
+                    "id":"5300144_option_1",
+                    "text": "初华要求你对定治的去留做出承诺。你打算如何回复她？",
+                    "icon": "cards/2000001",
+                    "items": [
+                        {
+                            "text": "安排一次聚会",
+                            "tag": "op1"
+                        },
+                        {
+                            "text": "杀了他？",
+                            "tag": "op2"
+                        },
+                        {
+                            "text": "我看初华小姐也是尤物。",
+                            "tag": "op3"
+                        }
+                    ]
+                },
+                "case:op1": {
+                    "rite":5011004
+                },
+                "case:op2": {
+                    "rite":5011005
+                },
+                "case:op3": {
+                    "rite":5011006
+                }
+            }
+        }
+    ]
+}

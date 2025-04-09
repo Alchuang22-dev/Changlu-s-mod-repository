@@ -1,0 +1,46 @@
+{
+    "id": 5370002,
+    "text": "神秘来客",     
+    "is_replay": 1, //是否可以重复触发
+    "auto_start": false,
+    "start_trigger": false, // 是否启动就立即开始校验条件
+    "on":{   //时机
+        "round_begin_ba":1
+    },
+    "condition":{  //条件
+    },
+    "settlement": [    //效果
+        {
+            "tips_resource":"", 
+            "tips_text":"他似乎花了一番工夫才打听到你的住址",
+            "action":{
+                "option": {
+                    "id":"5370002_option_1",
+                    "text": "这是一位气质独特的外国来客，举止得体而从容，据说是东方的贵族。\n 尽管保养的很好，他看起来已经有一定年岁了。\n他说，像您这样善良慈悲的大臣，不会拒绝像他这样的老人的请求。",
+                    "icon": "cards/5860001",
+                    "items": [
+                        {
+                            "text": "拒绝他",
+                            "tag": "op1"
+                        },
+                        {
+                            "text": "和他聊聊",
+                            "tag": "op2"
+                        }
+                    ]
+                },
+                "case:op1": {
+                        "event_off": 5370002,
+                        "prompt":{
+                            "id":"5370002_prompt_1",
+                            "text":"神秘的客人离开了。",
+                            "icon":"cards/2000001"
+                        }
+                    },
+                    "case:op2": {
+                        "rite": 5011002,
+                        "event_off": 5370002}
+            }
+        }
+    ]
+} 

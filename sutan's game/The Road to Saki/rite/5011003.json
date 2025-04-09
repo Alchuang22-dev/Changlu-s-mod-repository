@@ -1,0 +1,136 @@
+{
+    "id": 5011103,
+    "name": "丰川家的黑暗",
+    "text": "有人找上门来，声称自己是前几天被你就下的老人的亲戚。她自称是为了感谢你的恩情。",       
+    "tips": "",
+    "mapping_id":8001077,
+    "once_new":0,
+    "round_number": 1,
+    "waiting_round":3, 
+    "waiting_round_end_action":[ 
+    {
+        "condition": {
+        },
+        "result_text": "又过了几天，她又来了",
+        "result": 
+        { 
+            "event_on":5300101
+        },
+        "action": {
+        }
+    }
+    ],
+    "method_settlement": "",
+    "auto_begin": 0, 
+    "auto_result": 0, 
+    "location": "自宅:[2,12]", 
+    "icon": "rite_16",  
+    "tag_tips": [
+    ],
+    "tag_tips_up":{
+    },
+    "tips_text":[
+    ],
+    "open_conditions": [  
+    ],
+    "random_text": { 
+    },
+    "random_text_up":{
+    },
+    "random_effect": {          
+    },
+    "settlement_prior": [
+        {
+            "condition": {
+                "s2.is":2020015 
+            },
+            "result_title":"",
+            "result_text": "一见到丰川定治，她就不禁拘谨了起来，“看见您这样精神，真是高兴”！你虽有疑惑，限于家中没有空房，便安排她在附近住下了。",
+            "result": 
+            { 
+            "event_on":5370003
+            },
+            "action": {
+            }
+        },
+        {
+            "condition": {
+                "s2.is":2020003 
+            },
+            "result_title":"",
+            "result_text": "在接待她的过程中，你发现她总是念叨着祥子的名字——“以防万一，还是不要让她们单独见面了。”",
+            "result": 
+            { 
+            "event_on":5370003
+            },
+            "action": {
+            }
+        }
+    ],                
+    "settlement": [
+    ],                
+    "settlement_extre": [
+        {
+            "condition": {
+            },
+            "result_title":"",
+            "result_text": "这个看起来颇有些阴冷的少女不是来感谢的。他自称是祥子的小姨，声称你救下的老人一直在控制她们的生活。",
+            "result": 
+            { 
+            },
+            "action": {
+            }
+        },
+        {
+            "condition": {
+            },
+            "result_title":"",
+            "result_text": "“凭什么，凭什么……”她向你发出邀约，“你不是领受君王的命令要折断那些卡吗？如果我们除掉他的话……",
+            "result": 
+            { 
+            },
+            "action": {
+            }
+        },
+        {
+            "condition": {
+            },
+            "result_title":"",
+            "result_text": "你犹豫了一瞬间，她靠近你的身边劝诱道，“对你来说这很简单，不是吗？只要让我……而不是他！和祥子在一起……”\n你无法缕清其中的事实，或许她们需要见一面……",
+            "result": 
+            { 
+                "card":[2020018,"已拥有+1"]
+            },
+            "action": {
+                "event_on":5370004
+            }
+        }
+    ],
+    "cards_slot":
+    {
+        "s1":
+        {
+            "condition":
+            {
+                "is":2000314          
+            },
+            "open_adsorb":1,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"神秘的女性"
+        },
+        "s2":
+        {
+            "condition":
+            {
+                "type":"char"
+            },
+            "open_adsorb":0,
+            "is_key":0,
+            "is_empty":0,
+            "is_enemy":0,
+            "text":"你可以亲自或者派任意追随者接待他"
+        }
+    }
+} 
